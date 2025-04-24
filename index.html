@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Web</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <script defer src="script.js"></script> 
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="VIMO.png" alt="Logo VIMO">
+            <span class="vimo-text">VIMO</span>
+        </div>
+        <nav class="nav-menu">
+            <button class="nav-btn" onclick="scrollToSection('experiencia')" aria-label="Ir a Experiencia">Experiencia</button>
+            <button class="nav-btn" onclick="scrollToSection('habilidades')" aria-label="Ir a Habilidades">Habilidades</button>
+            <button class="nav-btn" onclick="scrollToSection('estudios')" aria-label="Ir a Estudios">Estudios</button>
+            <button class="nav-btn" onclick="scrollToSection('Proyecto')" aria-label="Ir a Proyecto">Proyecto</button>
+            
+            
+        </nav>
+    </header>
+
+    <section class="container">
+        <div class="text-content">
+            <h1>OSMAR VILLALOBOS</h1>
+            <br/>
+            <div class="presentacion">
+                <p>¡Hola! Me llamo Osmar, soy estudiante de Ingeniería de Sistemas Computacionales, tengo 21 años. 
+                Me considero una persona responsable y comprometida con mis deberes. Actualmente, estudio Ingeniería en 
+                Sistemas Computacionales, lo que me ha permitido desarrollar habilidades analíticas, de resolución de 
+                problemas y pensamiento lógico.</p>
+            
+                <p>Me esfuerzo por mejorar constantemente, aprender nuevas tecnologías y adaptarme a los cambios. 
+                Soy organizado, proactivo y siempre busco cumplir con mis responsabilidades de la mejor manera posible.</p>
+            </div>
+            
+            <br>
+            <a href="Currículum Vitae Cv de Administración Simple Azul (1).pdf" download="CV_Osmar_Villalobos.pdf">
+                <button class="nav-btn" onclick="scrollToSectionAndDownload('CV_Osmar_Villalobos.pdf')" aria-label=" Descargar CV"> Descargar CV</button>
+
+            </a>
+        </div>
+        <div class="image-content">
+            <img src="foto21.jpeg" alt="Foto de Osmar Villalobos">
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    </section>
+    
+
+    <div class="linea"></div>
+    <div class="custom-separator"></div>
+
+    <section id="experiencia" class="experiencia active">
+        <h2>EXPERIENCIA</h2>
+        <br>
+        <ul>
+            <li> Atención al cliente</li>
+            <li> Servicio al cliente</li>
+            <li> Reparación de celulares</li>
+            <li> Instructor de ejercicio</li>
+        </ul>
+    </section>
+
+    <div class="custom-separator"></div>
+
+    <section id="habilidades" class="habilidades">
+        <h2>HABILIDADES</h2>
+        <br>
+        <ul>
+            <li> Comunicación efectiva: Expresarse con claridad y escuchar activamente.</li>
+            <li> Trabajo en equipo: Colaborar bien con otros para alcanzar objetivos comunes.</li>
+            <li> Liderazgo: Motivar e inspirar a un grupo para lograr metas.</li>
+            <li> Resolución de problemas: Encontrar soluciones creativas y eficientes.</li>
+            <li> Pensamiento crítico: Analizar situaciones y tomar decisiones acertadas.</li>
+            <li> Adaptabilidad: Ser flexible ante cambios y nuevos desafíos.</li>
+            <li> Gestión del tiempo: Organizar tareas y prioridades de manera eficiente.</li>
+            <li> Empatía: Comprender y conectar con las emociones de los demás.</li>
+            <li> Resiliencia: Mantenerse firme y motivado ante dificultades.</li>
+            <li> Creatividad: Pensar de manera innovadora y original.</li>
+        </ul>
+    </section>
+
+    <div class="custom-separator"></div>
+
+    <section id="estudios" class="estudios">
+        <h2>ESTUDIOS</h2>
+    
+        <div class="estudio-item">
+            <ul><li>Certificado de Preparatoria</li></ul>
+            <img src="uaem.png" alt="Certificado Preparatoria">
+        </div>
+    
+        <div class="estudio-item">
+            <ul><li>Certificado INTRODUCCIÓN A LA IA</li></ul>
+            <img src="pot.png" alt="Certificado IA">
+        </div>
+    
+        <div class="estudio-item">
+            <ul><li>Certificado BASES Y CONCEPTOS</li></ul>
+            <img src="poten.png" alt="Certificado Bases">
+        </div>
+    
+        <div class="estudio-item">
+            <ul><li>Certificado FUNDAMENTOS</li></ul>
+            <img src="potencia.png" alt="Certificado Fundamentos">
+        </div>
+    
+        <div class="estudio-item">
+            <ul><li>Certificado de CISCO</li></ul>
+            <img src="CISCO.png" alt="Certificado Cisco">
+        </div>
+    
+        <div class="estudio-item">
+            <ul><li>Actualmente, estudio Ingeniería en Sistemas Computacionales.</li></ul>
+        </div>
+    </section>
+    
+    
+
+    <div class="custom-separator"></div>
+
+    <section id="Proyecto" class="Proyecto">
+        <h2>PROYECTO</h2>
+        <br>
+    
+        <div class="proyecto-item">
+            <ul><li>SIST. GEST DE VENTAS DE BOLETOS</li></ul>
+            <img src="SISTE.jpeg" alt="Imagen de Taquilla de Cine" class="proyecto-img">
+        </div>
+    
+        <div class="proyecto-item">
+            <ul><li>WALLE</li></ul>
+            <img src="WALLEE.jpeg" alt="Imagen del Proyecto WALLE" class="proyecto-img">
+        </div>
+    
+        <div class="proyecto-item">
+            <ul><li>DETECTOR DE HUMO</li></ul>
+            <img src="DETECTOR.jpeg" alt="Imagen del Proyecto DETECTOR" class="proyecto-img">
+        </div>
+    
+        <div class="proyecto-item">
+            <ul><li>BLOG</li></ul>
+            <img src="blog.png" alt="Imagen del Proyecto BLOG" class="proyecto-img">
+        </div>
+        <div class="proyecto-item">
+            <ul><li>TESIS</li></ul>
+            <img src="tesis.jpeg" alt="TESIS" class="proyecto-img">
+        </div>
+    </section>
+    
+
+    
+    <div class="custom-separator"></div>
+
+    <footer>
+        <div style="text-align: center;">
+          <h1 class="contactame">CONTACTAME</h1>
+
+          <div class="social-icons">
+            <a href="mailto:osmarv197@gmail.com" target="_blank">
+                <img src="gmail.png" alt="Gmail">
+            </a>            
+            <a href="https://wa.link/0e48go" target="_blank">
+                <img src="whatsapp.png" alt="WhatsApp">
+            </a>
+            <a href="https://www.facebook.com/share/16CjdKd7iV/" target="_blank">
+                <img src="facebook.png" alt="Facebook">
+            </a>
+        </div>
+        
+            <div class="copyright">
+                <p>© 2025 Osmar Villalobos. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <button id="backToTop" class="back-to-top" onclick="scrollToTop()">⬆ Regresar al inicio</button>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="imgModal">
+    </div>
+    <script>
+        const modal = document.getElementById("myModal");
+        const modalImg = document.getElementById("imgModal");
+        const closeBtn = document.querySelector(".close");
+    
+        // Activar modal para imágenes de estudios y proyectos
+        document.querySelectorAll(".estudios img, .Proyecto img").forEach(img => {
+            img.addEventListener("click", function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+            });
+        });
+    
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+        }
+    
+        modal.onclick = function (e) {
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    
+        
+
+</body>
+</html>

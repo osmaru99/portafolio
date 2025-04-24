@@ -1,0 +1,497 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+/* Estilos de títulos */
+h1, h2, .vimo-text, .btn {
+    font-family: "Press Start 2P", system-ui;
+}
+
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: black;
+    height: 80px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+/* Texto con estilo especial */
+.vimo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ff00;
+}
+
+/* Menú de navegación */
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+/* Botones del menú (habilidades,etc.) */
+.nav-btn {
+    background-color: #00aaff;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 12px;
+    min-width: 100px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: visible;
+    display: inline-block;
+    font-family: "Press Start 2P";
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover */
+.nav-btn:hover {
+    transform: scale(1.1);
+    background-color: #0088cc;
+    box-shadow: 0px 4px 10px rgba(0, 255, 21, 0.7);
+}
+
+/* Estilo para el botón seleccionado */
+.nav-btn.selected {
+    background-color: #00d640;
+    color: white;
+    border: 2px solid #00ff37;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 255, 21, 0.7);
+}
+
+/* Asegura que el último botón no se oculte */
+.nav-menu .nav-btn:last-child {
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 10;
+}
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 40px;
+    gap: 130px;
+}
+
+/* Estilos del contenido de imágenes */
+.image-content img {
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 4px #00aaff;
+}
+
+/* Botones navegador */
+.nav-btn2{
+    background-color: #00aaff;
+    border: none;
+    padding: 20px 20px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    min-width: 100px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: visible;
+    display: inline-block;
+    font-family: "Press Start 2P";
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+* Efecto hover */
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #0088cc;
+    box-shadow: 0px 4px 10px rgba(0, 255, 21, 0.7);
+}
+
+/* Estilo para el botón seleccionado */
+.btn.selected {
+    background-color: #00d640;
+    color: white;
+    border: 2px solid #00ff37;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 255, 21, 0.7);
+}
+
+/* Secciones generales */
+section {
+    padding: 70px;
+    text-align: left;
+}
+
+/* Secciones específicas */
+section h2 {
+    color: #00aaff;
+    text-align: left;
+}
+
+/* Estilos para la sección de experiencia */
+.experiencia {
+    border: 2px solid #00aaff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.experiencia h2 {
+    color: #00aaff;
+}
+
+.experiencia ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experiencia li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.experiencia li::before {
+    content: "✔ ";
+    color: #00ff00;
+}
+
+/* Estilos para la sección de habilidades */
+.habilidades {
+    border: 2px solid #00aaff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.habilidades h2 {
+    color: #00aaff;
+}
+
+.habilidades ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.habilidades li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.habilidades li::before {
+    content: "✔ ";
+    color: #00ff00;
+}
+
+
+/* Estilos generales para fondo */
+body {
+    background-color: black;
+}
+
+body {
+    background-color: black;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sección principal */
+.estudios {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+}
+
+/* Título */
+.estudios h2 {
+    color: #00aaff;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Cada bloque de estudio */
+.estudio-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    background-color: #111; /* fondo para destacar */
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #00aaff33;
+    flex-wrap: wrap;
+}
+
+/* Texto a la izquierda */
+.estudios ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 60%;
+}
+
+.estudios li {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+}
+
+.estudios li::before {
+    content: "✔ ";
+    color: #00ff00;
+}
+
+/* Imagen del certificado */
+.estudios img {
+    width: 150px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+/* Fondo del modal */
+.modal {
+    display: none; /* oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Imagen dentro del modal */
+.modal-content {
+    display: block;
+    margin: 5% auto;
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #00aaff;
+}
+
+/* Botón para cerrar */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Estilos para la sección de Proyecto */
+/* Estilos para la sección de Proyecto */
+.Proyecto {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+}
+
+/* Título */
+.Proyecto h2 {
+    color: #00aaff;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Cada ítem del proyecto */
+.proyecto-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    background-color: #111;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #00aaff33;
+    flex-wrap: wrap;
+}
+
+/* Lista sin viñetas */
+.Proyecto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 60%;
+}
+
+/* Texto del ítem */
+.Proyecto li {
+    font-size: 20px;
+    color: white;
+}
+
+.Proyecto li::before {
+    content: "✔ ";
+    color: #00ff00;
+}
+
+/* Imagen del proyecto */
+.proyecto-img {
+    width: 150px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: black; 
+    color: white; 
+    text-align: center; 
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Iconos de redes sociales */
+.social-icons {
+    margin-top: 10px;
+    display: flex; /* Alinear horizontalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    gap: 20px; /* Espacio uniforme entre iconos */
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    object-fit: contain; /* Para mantener la proporción de la imagen */
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .text-content {
+        width: 90%;
+        text-align: left;
+    }
+
+    .image-content img {
+        width: 80%;
+    }
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #bbb;
+    margin-top: 20px;
+}
+
+/* Separador personalizado */
+.custom-separator {
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #00aaff, #0088cc);
+    margin: 40px 0;
+    border-radius: 10px;
+}
+/* Estilos para la sección de presentación */
+.presentacion {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+    text-align: justify;
+}
+
+.contactame {
+    font-family: 'Press Start 2P', cursive; /* Fuente estilo pixel art */
+    font-size: 15px;
+    color: white;
+    text-shadow: 3px 3px 0px #000; /* Sombra para efecto retro */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none; /* Se oculta inicialmente */
+    transition: background 0.3s, transform 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #0088cc;
+    transform: scale(1.1);
+}
+
+/* Ocultar todas las secciones por defecto */
+.experiencia, .habilidades, .estudios,.Proyecto{
+    display: none;
+}
+
+/* Mostrar solo la sección activa */
+.active {
+    display: block !important;
+}
+
+.proyecto-img {
+    width: 300px;  /* Ajusta el tamaño de la imagen */
+    height: auto;  /* Mantiene la proporción */
+    display: block; /* Hace que cada imagen esté en su propia línea */
+    margin: 10px auto; /* Centra la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra elegante */
+}
+
+
